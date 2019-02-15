@@ -1,0 +1,76 @@
+body {background-color:rgb(255,175,53);}
+
+p  {font-family: arial;
+   text-align:center}
+
+
+h1	{color:black;
+	text-align:center;
+	font-family: arial black}
+
+h2	{text-align:center;
+	font-family: arial black;
+	background-color:rgb(255,85,00);
+	border: 2px solid powderblue}
+
+h3	{text-align:center;
+	font-family: arial black;
+	border: 1px solid white;
+	color:lightgrey}
+
+
+ul {list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  top: 0;
+  width: 100%;}
+
+li {float: left;}
+
+li a {display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+border-right:1px solid grey;}
+
+li a:hover {background-color:black;}
+
+li a.active {background-color:rgb(255,85,00);
+  		color:black;}
+
+.margin		{margin-top:100px} 
+
+body {
+  background-image: url("/images/dawn.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content {
+  background-color: black;
+  color: white;
+  margin: 60px;
+  padding: 20px;
+}
+
+.count {color: white;}
+
+.mySlides {display:none;}
+
+.button {
+  background-color: rgb(255,85,00);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: arial;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}

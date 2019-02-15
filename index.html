@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+<style>
+#timer {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+.countdown {border-style:double;
+}
+</style>
+</head>
+
+
+<body>
+    
+	<ul>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="page2.html">Race Categories</a></li>
+		<li><a href="page3.html">Racer Entitlement</a></li>
+		s
+		<li><a href="https://liv3ly.com/registration/event/SDM2019" target="blank">Register Now!</a>
+	</ul>
+
+	<div style="background-color:black">
+	<h1 class="margin" style="font-size:60px"><span style="color:limegreen">OSIM </span><span style="color:rgb(255,85,00)">Sun</span><span style="color:white">down Marathon Singapore </span><span style="color:rgb(255,85,00)">2019</span></h1>
+    <p><a href="https://www.sundownmarathon.com/sg/" target="blank"><img src="images/sundown.jpg" alt="sundown" width="1700" height="800" title="To OSIM Sundown Marathon Website"></a></p>
+	</div>
+
+	
+	<h2 class="count">Days until Race</h2>
+	
+	<div style="background-color:black;color:white" id="timer" class="countdown">
+		<p id="demo" style="color:rgb(255,85,00);border: 4px dashed rgb(255,85,00);"></p>
+	</div>
+			<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("Jun 1, 2019 00:00:00").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				// Get todays date and time
+				var now = new Date().getTime();
+    
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+    
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+			  // Output the result in an element with id="demo"
+			  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+			  + minutes + "m " + seconds + "s ";
+				
+			  // If the count down is over, write some text 
+			  if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+			</script>
+
+
+	<div class="content">
+		<h2>Event Details</h2>
+		
+		<b><p style="font-size:30px">
+		Date:<span style="color:salmon"> 1 June 2019</span>
+		<br>
+		Time:<span style="color:salmon"> 0001hrs (Midnight)</span>
+		<br>
+		Location:<span style="color:salmon">F1 Pit Building (1 Republic Boulevard, Singapore)</span>
+		</p></b>
+		
+		<p>
+		<a href="https://www.google.com/maps/place/1+Republic+Blvd,+Singapore+038975/@1.2914037,103.8617302,17z/data=!3m1!4b1!4m5!3m4!1s0x31da19abb4b5bdd5:0x40d61c5f9b79648!8m2!3d1.2914037!4d103.8639189" target="blank" class="button">Map to Venue</a>
+		</ol>
+		</p>	
+	</div>
+
+	<div class="content">
+		<h2>Gallery</h2>
+		<center>
+		<img class="mySlides" src="images/pit.jpg" style="width:1000px;height:600px">
+		<img class="mySlides" src="images/pit2.jpg" style="width:1000px;height:600px">
+		<img class="mySlides" src="images/pit3.jpg" style="width:1000px;height:600px">
+		<img class="mySlides" src="images/pit4.jpg" style="width:1000px;height:600px">
+		<img class="mySlides" src="images/pit5.jpg" style="width:1000px;height:600px">
+		<img class="mySlides" src="images/pit6.jpeg" style="width:1000px;height:600px">
+		<img class="mySlides" src="images/pit7.jpeg" style="width:1000px;height:600px">
+		<img class="mySlides" src="images/pit8.jpeg" style="width:1000px;height:600px">
+		<img class="mySlides" src="images/pit9.jpg" style="width:1000px;height:600px">
+		</center>
+		
+	</div>
+
+					<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  myIndex++;
+					  if (myIndex > x.length) {myIndex = 1}    
+					  x[myIndex-1].style.display = "block";  
+					  setTimeout(carousel, 2000); // Change image every 5 seconds
+					}
+					</script>
+
+
+
+
+
+
+	<div class="content">
+		<h2>Past Races Preview</h2>
+		<center><iframe width="560" height="315" src="https://www.youtube.com/embed/maN4n3Yw2mY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/t5w1RFmczHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/BzrCah3-v6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</center>
+	</div>
+
+	<div class="content">
+		<h2>Sponsors</h2>
+		<center>
+		<a href="https://sg.osim.com/" target="blank"><img src="images/spon.jpg" alt="sponsors"></a>
+		<img src="images/spon2.jpg" alt="sponsors">
+		<a href="http://infinitus.asia/" target="blank"><img src="images/spon3.jpg" alt="sponsors"></a>
+		<a href="https://liv3ly.com/" target="blank"><img src="images/spon4.jpg" alt="sponsors"></a>	
+		</center>
+	</div>
+
+
+
+</body>
+</html>
