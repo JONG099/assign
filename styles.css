@@ -45,7 +45,7 @@ li a.active {background-color:rgb(255,85,00);
 .margin		{margin-top:100px} 
 
 body {
-  background-image: url("/images/dawn.png");
+  background-image: url("images/dawn.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
